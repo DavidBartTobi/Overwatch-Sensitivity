@@ -2,7 +2,7 @@ import sqlite3
 from tkinter import messagebox
 
 
-def Hero_Modify(sens,id):
+def hero_modify(sens,id):
 
     is_number = False
 
@@ -25,7 +25,7 @@ def Hero_Modify(sens,id):
         conn.commit()
         conn.close()
 
-def Get_Sensitivity(id):
+def get_sensitivity(id):
     conn = sqlite3.connect('OWsenseDB.db')
     c = conn.cursor()
 
